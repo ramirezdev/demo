@@ -1,5 +1,7 @@
 var gulp = require('gulp');
 var source = require('vinyl-source-stream'); // Used to stream bundle for further handling
+var sass = require('gulp-sass');
+var neat = require('node-neat').includePaths;
 var browserify = require('browserify');
 var watchify = require('watchify');
 var babelify = require('babelify');
@@ -114,24 +116,24 @@ var browserifyTask = function (options) {
 
 }
 
-var cssTask = function (options) {
+var sassTask = function (options) {
     if (options.development) {
       var run = function () {
-        console.log(arguments);
-        var start = new Date();
-        console.log('Building CSS bundle');
+        
         gulp.src(options.src)
-          .pipe(concat('main.css'))
-          .pipe(gulp.dest(options.dest))
-          .pipe(notify(function () {
-            console.log('CSS bundle built in ' + (Date.now() - start) + 'ms');
-          }));
+          .pipe(sass({
+            includePaths: ['main'].concat(neat)
+          }))
+          .pipe(gulp.dest(options.dest));
+
       };
       run();
       gulp.watch(options.src, run);
     } else {
       gulp.src(options.src)
-        .pipe(concat('main.css'))
+        .pipe(sass({
+          includePaths: ['main'].concat(neat)
+        }))
         .pipe(cssmin())
         .pipe(gulp.dest(options.dest));
     }
@@ -147,9 +149,9 @@ gulp.task('default', function () {
     dest: './build'
   });
 
-  cssTask({
+  sassTask({
     development: true,
-    src: './styles/**/*.css',
+    src: './app/**/*.scss',
     dest: './build'
   });
 
@@ -168,9 +170,9 @@ gulp.task('deploy', function () {
     dest: './dist'
   });
 
-  cssTask({
+  scssTask({
     development: false,
-    src: './styles/**/*.css',
+    src: './styles/**/*.scss',
     dest: './dist'
   });
 
