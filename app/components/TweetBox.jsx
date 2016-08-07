@@ -41,7 +41,9 @@ class TweetBox extends React.Component {
                     </div>
 					<a href="#" onClick={ this.openFeed } className={ toggleClasses }></a> 
 				</div>
-                <TweetsList enabled={ this.state.feedOpen }/>
+                <TweetsList 
+                    enabled={ this.state.feedOpen }
+                    collection={ this.props.collection }/>
 			</div>
 		);
 	}

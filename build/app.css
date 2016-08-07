@@ -272,7 +272,11 @@ html {
     height: 40px;
     background: #464646;
     padding: 10px 15px;
-    vertical-align: top; }
+    vertical-align: top;
+    width: 150px;
+    -webkit-transition: width 350ms;
+    transition: width 350ms;
+    transition-timing-function: ease-out; }
     .tweet-box .inner-holder .twitter-feed-holder.enabled {
       width: 430px; }
     .tweet-box .inner-holder .twitter-feed-holder .tweet-logo {
@@ -329,16 +333,20 @@ html {
   right: 0;
   top: 40px;
   width: 470px;
-  padding: 15px 15px 45px;
   background: #e34e33;
-  display: none; }
+  display: none;
+  overflow: hidden; }
   .tweets-list.enabled {
-    display: block; }
+    display: block;
+    -webkit-animation: open-panel 350ms ease-out;
+    -moz-animation: open-panel 350ms ease-out;
+    animation: open-panel 350ms ease-out; }
   .tweets-list .wrapper {
     height: 590px;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 10px; }
+    padding: 10px;
+    margin: 18px; }
     .tweets-list .wrapper::-webkit-scrollbar {
       width: .3rem; }
     .tweets-list .wrapper::-webkit-scrollbar-track {
@@ -346,6 +354,24 @@ html {
     .tweets-list .wrapper::-webkit-scrollbar-thumb {
       background-color: #000;
       outline: 1px solid #9f9f9f; }
+
+@-webkit-keyframes open-panel {
+  0% {
+    height: 0; }
+  100% {
+    height: 640px; } }
+
+@-moz-keyframes open-panel {
+  0% {
+    height: 0; }
+  100% {
+    height: 640px; } }
+
+@keyframes open-panel {
+  0% {
+    height: 0; }
+  100% {
+    height: 640px; } }
 
 .tweet {
   margin-bottom: 35px; }

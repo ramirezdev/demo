@@ -27,7 +27,7 @@ class Nav extends React.Component {
 							<ul>
 								{ menuItems }
 							</ul>
-							<TweetBox/>
+							<TweetBox collection={ this.props.tweets }/>
 							<a href="#" className="mobile-menu-icon"></a>
 						</div>
 					</div>

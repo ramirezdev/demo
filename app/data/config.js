@@ -111,6 +111,27 @@ const configData = {
     }
 
 
+  ],
+
+  tweets: [
+
+    {
+      content: 'Can’t wait for the launch of the Envoy Website. <a href="http://instagr.am/p/N8d7E/">instagr.am/p/N8d7E/</a> Check our latest work.',
+      date: 'about an hour ago via twitter'
+    },
+    {
+      content: 'ooVoo tabs Envoy as new digital agency.',
+      date: 'about an hour ago via twitter'
+    },
+    {
+      content: 'Check out our latest work for <a href="http://twitter.com/promax">@promax</a>',
+      date: 'about an hour ago via twitter'
+    },
+    {
+      content: 'Sneak peek our new office. <a href="http://but.ly/zH3UnD">but.ly/zH3UnD</a> Drop in on us.',
+      date: 'about an hour ago via twitter'
+    }
+
   ]
 
 

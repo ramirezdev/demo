@@ -12,7 +12,8 @@ class HeaderView extends React.Component {
 		return (
 			<header>
 				<Nav 
-					collection={ this.props.menuItems }/>
+					collection={ this.props.menuItems } 
+					tweets={ this.props.tweets }/>
 				<Slideshow 
 					collection={ this.props.slides }/>
 			</header>

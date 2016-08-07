@@ -13,7 +13,8 @@ class HomeView extends React.Component {
 				
 				<HeaderView 
 					menuItems={ Data.base.menuItems } 
-					slides={ Data.slides }/>
+					slides={ Data.slides }
+					tweets={ Data.tweets }/>
 				
 				<div className="content-holder">
 					<h2 dangerouslySetInnerHTML={ { __html: Data.base.tagLine } }></h2>

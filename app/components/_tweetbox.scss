@@ -13,6 +13,10 @@
 			background: $tweetBoxBkg;
 			padding: 10px 15px;
 			vertical-align: top;
+			width: 150px;
+			-webkit-transition: width 350ms;
+    		transition: width 350ms;
+    		transition-timing-function: ease-out;
 			&.enabled {
 				width: 430px;	
 			}
