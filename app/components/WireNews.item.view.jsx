@@ -13,7 +13,7 @@ class WireNewsItemView extends React.Component {
 		return (
 			<div className="wire-news-item-wrapper">
 				<h3 className="title">{ model.title }</h3>
-				<span className="date">{ date }</span>
+				<p className="date">{ date }</p>
 				<a className="news-link" href={ '/news/' + model.id }>Read More</a>
 			</div>
 		);

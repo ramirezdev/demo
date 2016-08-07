@@ -1,0 +1,33 @@
+.navigation-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px 0 15px;
+
+	.logo {
+		background: url('img/icons.png') no-repeat -3px -3px;
+		width: 87px;
+		height: 25px;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		list-style: none;
+		display: inline-block;
+	    margin: 0;
+	    padding: 0;
+	    li {
+	    	display: inline;
+	    	margin: 0 12px;
+	    	a {
+	    		font-size: .7rem;
+	    		font-weight: 600;
+	    	}
+	    }
+	    
+	}
+
+	.tweet-box {
+		display: none;
+	}
+}

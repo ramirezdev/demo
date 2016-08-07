@@ -4,7 +4,8 @@ html {
   font-weight: 700;
   background: #1d1d1d; }
   html body {
-    color: #fff; }
+    color: #fff;
+    margin: 0; }
     html body a {
       color: #fff;
       text-decoration: none; }

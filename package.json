@@ -29,6 +29,7 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "gulp-sass": "^2.3.2",
     "lodash": "^4.14.1",
     "moment": "^2.14.1",

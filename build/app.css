@@ -10,7 +10,8 @@ html {
   font-weight: 700;
   background: #1d1d1d; }
   html body {
-    color: #fff; }
+    color: #fff;
+    margin: 0; }
     html body a {
       color: #fff;
       text-decoration: none; }
@@ -39,34 +40,59 @@ html {
     .featured-work-item .project-link:hover {
       color: #fff; }
 
-.slick-slide {
-  position: relative; }
-  .slick-slide .project-info {
-    position: absolute; }
-
-.app-wrapper {
-  width: 100%;
-  max-width: 1600px; }
-  .app-wrapper header .navigation-wrapper .logo {
+.navigation-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 0 15px; }
+  .navigation-wrapper .logo {
     background: url("img/icons.png") no-repeat -3px -3px;
     width: 87px;
     height: 25px;
     display: inline-block;
     margin: 0;
     padding: 0; }
-  .app-wrapper header .navigation-wrapper ul {
+  .navigation-wrapper ul {
     list-style: none;
     display: inline-block;
     margin: 0;
     padding: 0; }
-    .app-wrapper header .navigation-wrapper ul li {
+    .navigation-wrapper ul li {
       display: inline;
       margin: 0 12px; }
-      .app-wrapper header .navigation-wrapper ul li a {
+      .navigation-wrapper ul li a {
         font-size: .7rem;
         font-weight: 600; }
-    .app-wrapper header .navigation-wrapper ul .tweet-box {
-      display: none; }
+  .navigation-wrapper .tweet-box {
+    display: none; }
+
+.slick-slide {
+  position: relative; }
+  .slick-slide .project-info {
+    position: absolute; }
+
+.wire-news-item-wrapper {
+  margin-bottom: 20px; }
+  .wire-news-item-wrapper h3.title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0; }
+  .wire-news-item-wrapper .date {
+    font-size: .7rem;
+    padding: 10px 0;
+    margin: 0;
+    color: #9f9f9f; }
+  .wire-news-item-wrapper .news-link {
+    font-size: .7rem;
+    color: #e34e33; }
+    .wire-news-item-wrapper .news-link:hover {
+      color: #fff; }
+
+.app-wrapper {
+  width: 100%;
+  max-width: 1600px; }
+  .app-wrapper header {
+    background: #ccc; }
   .app-wrapper .content-holder {
     max-width: 960px;
     margin: 0 auto; }
