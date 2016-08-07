@@ -1,9 +1,10 @@
 .wire-news-item-wrapper {
+	@include span-columns(4);
 	margin-bottom: 20px;
 	h3{
 		&.title {
-			font-size: 2rem;
-			line-height: 2rem;
+			font-size: 1.9rem;
+			line-height: 1.9rem;
 			margin: 0;
     		padding: 0;
 		}

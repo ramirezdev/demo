@@ -2,11 +2,12 @@
 	width: 100%;
 	max-width: 1600px;
 	header {
-		background: #ccc;
+		position: relative;
 	}
 	.content-holder {
 		max-width: 960px;
     	margin: 0 auto;
+    	
 		>h2 {
 			font-size: 2rem;
 			border-bottom: 2px solid $strokeColor;
@@ -39,6 +40,10 @@
 			}
 			.featured-work-feed {
 				margin-bottom: 80px
+			}
+
+			.feed {
+				@include outer-container;
 			}
 		}
 	}

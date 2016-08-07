@@ -9,7 +9,7 @@ class Nav extends React.Component {
     }
 
 	render() {
-		
+
 		let menuItems = null;
 
 	    if ( this.props.collection.length > 0 ) {
@@ -20,11 +20,13 @@ class Nav extends React.Component {
 	    }
 		return (
 			<div className="navigation-wrapper">
-				<h1 className="logo"></h1>
-				<ul>
-					{ menuItems }
-				</ul>
-				<TweetBox/>
+				<div className="holder">
+					<h1 className="logo"></h1>
+					<ul>
+						{ menuItems }
+					</ul>
+					<TweetBox/>
+				</div>
 
 			</div>
 		);

@@ -1,5 +1,6 @@
 .featured-work-item {
 	margin-bottom: 20px;
+	@include span-columns(4);
 	img {
 		&.icon {
 			width: 100%;

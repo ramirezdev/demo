@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick';
+import ImageGallery from 'react-image-gallery';
 import { map as _map } from 'lodash';
 
 class Slideshow extends React.Component {
@@ -7,35 +7,44 @@ class Slideshow extends React.Component {
 	constructor( props ){
         super(props);
     }
-
+ 
 	render() {
-		let siderItems = null;
+		let sliderItems = [];
 
 	    if ( this.props.collection.length > 0 ) {
 
-	    	siderItems = _map( this.props.collection, ( model, i ) => {
-	        	return ( <div key={ i }>
-	        				<a href={ "projects/" + model.id }>
-	        					<div className="project-info">
-	        						<h3 dangerouslySetInnerHTML={ { __html: model.title } }></h3>
-	        						<p dangerouslySetInnerHTML={ { __html: model.desc } }></p>
-	        					</div>
-	        					<img src={ model.slideImg }/>
-        					</a>
-        				 </div> );
+	    	sliderItems = _map( this.props.collection, ( model, i ) => {
+	    		console.log('model.slideImg ', model.slideImg);
+	    		const obj = {
+	    			original: model.slideImg
+	    		};
+	    		sliderItems.push( obj );
+	        	
 	      	} );
 	    }
 
-	    const settings = {
-	      dots: true,
-	      infinite: true,
-	      speed: 750,
-	      slidesToShow: 1,
-	      slidesToScroll: 1
-    	};
+
+    	const images = [
+	      {
+	        original: 'img/slides/slide1.jpg'
+	      },
+	      {
+	        original: 'img/slides/slide2.jpg'
+	      },
+	      {
+	        original: 'img/slides/slide3.jpg'
+	      }
+	    ];
+
+	    console.log(sliderItems)
 		return (
 			<div className="slideshow-wrapper">
-				
+				<ImageGallery
+		          ref={i => this._imageGallery = i}
+		          items={ images }
+		          autoPlay={ true }
+		          slideInterval={ 3000 }
+		          showNav={ true }/>
 			</div>
 		);
 	}
