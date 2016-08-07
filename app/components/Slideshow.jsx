@@ -36,7 +36,6 @@ class Slideshow extends React.Component {
 	      }
 	    ];
 
-	    console.log(sliderItems)
 		return (
 			<div className="slideshow-wrapper">
 				<ImageGallery

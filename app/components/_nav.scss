@@ -20,6 +20,7 @@
 			@include outer-container;
 			.centered {
 				@include span-columns(12);
+				position: relative;
 				.logo {
 					background: url('img/icons.png') no-repeat -3px -3px;
 					width: 87px;
@@ -47,17 +48,13 @@
 			    
 				}
 
-				.tweet-box {
-					display: none;
-				}
-
 				.mobile-menu-icon {
 					background: url('img/icons.png') no-repeat -47px -60px;
 					width: 43px;
 					height: 35px;
 					display: inline-block;
 					right: 15px;
-				    top: 12px;
+				    top: -4px;
 				    position: absolute;
 					@media screen and (min-width: 769px) {
       					display:none;

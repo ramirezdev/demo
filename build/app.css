@@ -214,7 +214,8 @@ html {
         float: left;
         display: block;
         margin-right: 2.35765%;
-        width: 100%; }
+        width: 100%;
+        position: relative; }
         .navigation-wrapper .holder .elements .centered:last-child {
           margin-right: 0; }
         .navigation-wrapper .holder .elements .centered .logo {
@@ -238,15 +239,13 @@ html {
             .navigation-wrapper .holder .elements .centered ul li a {
               font-size: .7rem;
               font-weight: 600; }
-        .navigation-wrapper .holder .elements .centered .tweet-box {
-          display: none; }
         .navigation-wrapper .holder .elements .centered .mobile-menu-icon {
           background: url("img/icons.png") no-repeat -47px -60px;
           width: 43px;
           height: 35px;
           display: inline-block;
           right: 15px;
-          top: 12px;
+          top: -4px;
           position: absolute; }
           @media screen and (min-width: 769px) {
             .navigation-wrapper .holder .elements .centered .mobile-menu-icon {
@@ -259,6 +258,39 @@ html {
     width: 100%; }
   .slideshow-wrapper .image-gallery .image-gallery-thumbnails {
     display: none; }
+
+.tweet-box {
+  display: none;
+  position: absolute;
+  right: 15px;
+  bottom: -20px; }
+  @media screen and (min-width: 769px) {
+    .tweet-box {
+      display: inline-block; } }
+  .tweet-box .inner-holder .twitter-feed-holder {
+    display: inline-block;
+    height: 40px;
+    background: #464646;
+    padding: 10px 15px;
+    vertical-align: top; }
+    .tweet-box .inner-holder .twitter-feed-holder.enabled {
+      width: 430px; }
+    .tweet-box .inner-holder .twitter-feed-holder .tweet-logo {
+      background: url("img/icons.png") no-repeat -4px -35px;
+      width: 21px;
+      height: 17px;
+      display: inline-block;
+      margin-right: 5px; }
+    .tweet-box .inner-holder .twitter-feed-holder .label {
+      font-size: .7rem;
+      color: #67d9da; }
+  .tweet-box .inner-holder .toggle-link {
+    background: url("img/icons.png") no-repeat -4px -60px;
+    width: 40px;
+    height: 40px;
+    display: inline-block; }
+    .tweet-box .inner-holder .toggle-link.enabled {
+      background: url("img/icons.png") no-repeat -4px -102px; }
 
 .wire-news-item-wrapper {
   float: left;
@@ -291,6 +323,43 @@ html {
       width: 31.76157%; }
       .wire-news-item-wrapper:last-child {
         margin-right: 0; } }
+
+.tweets-list {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 470px;
+  padding: 15px 15px 45px;
+  background: #e34e33;
+  display: none; }
+  .tweets-list.enabled {
+    display: block; }
+  .tweets-list .wrapper {
+    height: 590px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 10px; }
+    .tweets-list .wrapper::-webkit-scrollbar {
+      width: .3rem; }
+    .tweets-list .wrapper::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+    .tweets-list .wrapper::-webkit-scrollbar-thumb {
+      background-color: #000;
+      outline: 1px solid #9f9f9f; }
+
+.tweet {
+  margin-bottom: 35px; }
+  .tweet .tweet-content {
+    font-size: 2rem; }
+    .tweet .tweet-content a {
+      color: #941b1e; }
+      .tweet .tweet-content a:hover {
+        color: #000; }
+  .tweet .modified {
+    font-size: .8rem;
+    color: #e4e4e4;
+    margin: 0;
+    padding: 0; }
 
 .app-wrapper {
   width: 100%;
