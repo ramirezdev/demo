@@ -1,3 +1,27 @@
-body {
-	background: #ccc;
+$bodybg : #1d1d1d;
+$bodyTextColor: #fff;
+$linkHoverColor: #e34e33;
+$sectionLabelColor: #9f9f9f;
+$strokeColor: #282828;
+$projectTitleColor: #67d9da;
+$projectDescColor: $sectionLabelColor;
+
+html {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	background: $bodybg;
+
+	body {
+		color: $bodyTextColor;
+		
+		a {
+			color: $bodyTextColor;
+			text-decoration: none;
+			&:hover {
+				color: $linkHoverColor;
+			}
+		}
+	}
+
 }

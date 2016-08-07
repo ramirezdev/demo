@@ -4,8 +4,93 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-body {
-  background: #ccc; }
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background: #1d1d1d; }
+  html body {
+    color: #fff; }
+    html body a {
+      color: #fff;
+      text-decoration: none; }
+      html body a:hover {
+        color: #e34e33; }
 
 .featured-work-item {
-  background: #ccc; }
+  margin-bottom: 20px; }
+  .featured-work-item img.icon {
+    width: 100%;
+    margin-bottom: 20px; }
+  .featured-work-item .project-title {
+    color: #67d9da; }
+  .featured-work-item .project-desc {
+    font-size: .7rem;
+    color: #9f9f9f;
+    padding: 0px;
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical; }
+  .featured-work-item .project-link {
+    font-size: .7rem;
+    color: #e34e33; }
+    .featured-work-item .project-link:hover {
+      color: #fff; }
+
+.slick-slide {
+  position: relative; }
+  .slick-slide .project-info {
+    position: absolute; }
+
+.app-wrapper {
+  width: 100%;
+  max-width: 1600px; }
+  .app-wrapper header .navigation-wrapper .logo {
+    background: url("img/icons.png") no-repeat -3px -3px;
+    width: 87px;
+    height: 25px;
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+  .app-wrapper header .navigation-wrapper ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+    .app-wrapper header .navigation-wrapper ul li {
+      display: inline;
+      margin: 0 12px; }
+      .app-wrapper header .navigation-wrapper ul li a {
+        font-size: .7rem;
+        font-weight: 600; }
+    .app-wrapper header .navigation-wrapper ul .tweet-box {
+      display: none; }
+  .app-wrapper .content-holder {
+    max-width: 960px;
+    margin: 0 auto; }
+    .app-wrapper .content-holder > h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #282828;
+      padding: 60px 0 40px;
+      margin: 0 0 70px;
+      line-height: 2rem; }
+      .app-wrapper .content-holder > h2 .sig {
+        color: #e34e33; }
+    .app-wrapper .content-holder .feed-items-wrapper .section-label {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #282828; }
+      .app-wrapper .content-holder .feed-items-wrapper .section-label h3 {
+        color: #9f9f9f;
+        font-size: 1.3rem;
+        display: inline; }
+      .app-wrapper .content-holder .feed-items-wrapper .section-label .view-all-link {
+        color: #e34e33;
+        font-size: .8rem;
+        margin-left: 12px; }
+        .app-wrapper .content-holder .feed-items-wrapper .section-label .view-all-link:hover {
+          color: #fff; }
+    .app-wrapper .content-holder .feed-items-wrapper .featured-work-feed {
+      margin-bottom: 80px; }

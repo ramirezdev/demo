@@ -11,8 +11,10 @@ class HeaderView extends React.Component {
 	render() {
 		return (
 			<header>
-				<Nav/>
-				<Slideshow/>
+				<Nav 
+					collection={ this.props.menuItems }/>
+				<Slideshow 
+					collection={ this.props.slides }/>
 			</header>
 		);
 	}

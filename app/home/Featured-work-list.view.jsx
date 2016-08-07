@@ -23,6 +23,8 @@ class FeaturedWorkList extends React.Component {
 			<div className="featured-work-feed">
 				<div className="section-label">	
 					<h3>Featured Work</h3> <a href="#" className="view-all-link">View All Work</a>
+				</div>
+				<div className="feed">
 					{ featuredItems }
 				</div>
 			</div>

@@ -1,2 +1,12 @@
-body {
-  background: #ccc; }
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background: #1d1d1d; }
+  html body {
+    color: #fff; }
+    html body a {
+      color: #fff;
+      text-decoration: none; }
+      html body a:hover {
+        color: #e34e33; }

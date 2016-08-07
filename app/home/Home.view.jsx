@@ -11,10 +11,12 @@ class HomeView extends React.Component {
 		return (
 			<div className="app-wrapper">
 				
-				<HeaderView menuItems={ Data.base.menuItems }/>
+				<HeaderView 
+					menuItems={ Data.base.menuItems } 
+					slides={ Data.slides }/>
 				
 				<div className="content-holder">
-					<h2>{ Data.base.tagLine }</h2>
+					<h2 dangerouslySetInnerHTML={ { __html: Data.base.tagLine } }></h2>
 					<div className="feed-items-wrapper">
 						<FeaturedWorkList collection={ Data.featured }/>
 						<NewsList collection={ Data.news }/>

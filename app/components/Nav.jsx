@@ -1,4 +1,5 @@
 import React from 'react';
+import { map as _map } from 'lodash';
 import TweetBox from './tweetBox.jsx';
 
 class Nav extends React.Component {
@@ -8,15 +9,20 @@ class Nav extends React.Component {
     }
 
 	render() {
+		
+		let menuItems = null;
+
+	    if ( this.props.collection.length > 0 ) {
+
+	    	menuItems = _map( this.props.collection, ( model, i ) => {
+	        	return ( <li key={ i }><a href={ model.route }>{ model.displayName }</a></li> );
+	      	} );
+	    }
 		return (
 			<div className="navigation-wrapper">
-				<h1>Logo</h1>
+				<h1 className="logo"></h1>
 				<ul>
-					<li>menu item 1</li>
-					<li>menu item 2</li>
-					<li>menu item 3</li>
-					<li>menu item 4</li>
-					<li>menu item 5</li>
+					{ menuItems }
 				</ul>
 				<TweetBox/>
 
