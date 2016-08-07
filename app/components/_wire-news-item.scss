@@ -1,5 +1,6 @@
 .wire-news-item-wrapper {
-	@include span-columns(4);
+	@include span-columns(12);
+	
 	margin-bottom: 20px;
 	h3{
 		&.title {
@@ -22,4 +23,7 @@
 			color: $bodyTextColor;
 		}
 	}
+	@media screen and (min-width: 769px) {
+      @include span-columns(4);
+    }
 }

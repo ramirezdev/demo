@@ -21,11 +21,18 @@ class Nav extends React.Component {
 		return (
 			<div className="navigation-wrapper">
 				<div className="holder">
-					<h1 className="logo"></h1>
-					<ul>
-						{ menuItems }
-					</ul>
-					<TweetBox/>
+					<div className="elements">
+						<div className="centered">
+							<h1 className="logo"></h1>
+							<ul>
+								{ menuItems }
+							</ul>
+							<TweetBox/>
+							<a href="#" className="mobile-menu-icon"></a>
+						</div>
+					</div>
+					
+					
 				</div>
 
 			</div>

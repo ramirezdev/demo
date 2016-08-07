@@ -16,14 +16,14 @@ class NewsList extends React.Component {
 	    }
 	    
 		return (
-			<div className="news-feed">
+			<section className="news-feed">
 				<div className="section-label">	
 					<h3>Wire</h3> <a href="#" className="view-all-link">View All News</a>
 				</div>
 				<div className="feed">
 					{ newsItems }
 				</div>
-			</div>
+			</section>
 		);
 	}
 }

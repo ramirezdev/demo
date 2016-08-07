@@ -11,11 +11,11 @@ class WireNewsItemView extends React.Component {
 		const model = this.props.model
 		const date = moment( model.date ).format( 'MM/DD/YYYY' );
 		return (
-			<div className="wire-news-item-wrapper">
+			<article className="wire-news-item-wrapper">
 				<h3 className="title">{ model.title }</h3>
 				<p className="date">{ date }</p>
 				<a className="news-link" href={ '/news/' + model.id }>Read More</a>
-			</div>
+			</article>
 		);
 	}
 }

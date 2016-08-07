@@ -1,6 +1,8 @@
 .featured-work-item {
 	margin-bottom: 20px;
-	@include span-columns(4);
+	@include span-columns(12);
+
+	
 	img {
 		&.icon {
 			width: 100%;
@@ -27,4 +29,7 @@
 			color: $bodyTextColor;
 		}
 	}
+	@media screen and (min-width: 769px) {
+      @include span-columns(4);
+    }
 }
