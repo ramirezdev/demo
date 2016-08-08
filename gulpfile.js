@@ -170,7 +170,7 @@ gulp.task('deploy', function () {
     dest: './dist'
   });
 
-  scssTask({
+  sassTask({
     development: false,
     src: './styles/**/*.scss',
     dest: './dist'

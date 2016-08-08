@@ -3,8 +3,6 @@ import getJSON from 'get-json';
 
 class TweetListItem extends React.Component {
 
-	//Todo make an actual twitter feed using the API.
-
 	constructor( props ){
         super(props);
     }
