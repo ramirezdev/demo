@@ -11,9 +11,7 @@ React JS and bourbon Neat demo.
 ### Development
 * Run `NODE_ENV=development gulp`
 * Go to `localhost:8889` to display the app
-* Any changes to `app` folder will automatically rebuild to `build` folder
-* Run `gulp test` to run all tests with phantomJS and produce XML reports
-
+* Any changes to `app` folder will automatically rebuild to `build` folder 
 
 ### Directory
 * **build/**: Where your automatically builds to. This is where you launch your app in development
