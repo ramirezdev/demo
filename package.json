@@ -31,7 +31,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "gulp-sass": "^2.3.2",
-    "image-gallery": "^0.3.1",
+    "react-image-gallery": "^0.6.7",
     "lodash": "^4.14.1",
     "moment": "^2.14.1",
     "node-bourbon": "^4.2.8",
